@@ -25,6 +25,8 @@
   async function getDogImages(breed, count) {
     // API call to dog.ceo
     // Returns a maximum count images in a list of a specific breed
+    //@Comment // We can avoid multiple awaits by using anyonymous functions in JS which will ease testing
+    //@Comment // We must use try catch block to handle errors that fetch might throw
     let response = await fetch(
       `https://dog.ceo/api/breed/${breed}/images/random/${count}`
     );
@@ -113,3 +115,9 @@
 
   init();
 })();
+
+
+  // @Comment Try catch blocks must be used everywhere fetch is use
+  // @Comment Instead of having all the functionality in a single file we can write the code in multiple files
+  // @Comment Functions can be declared const so that a function cannot be called without being defined
+  // @Comment Multiple async functions can be reduced by writing anonymous functions
