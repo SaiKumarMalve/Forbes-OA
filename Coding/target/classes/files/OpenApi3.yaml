@@ -154,7 +154,10 @@ paths:
       tags:
       - Misc
       summary: Story
-      description: Using the posted body (story), the API should return a list of words that are not found or added to the dictionary of the system. For each word provide what the closest match for it would be from the dictionary. If more than one item is the same level of close match to a misspelled entity return the suggestion from the dictionary that comes first.
+      description: Using the posted body (story), the API should return a list of words that are not found or added
+        to the dictionary of the system. For each word provide what the closest match for it would be from the dictionary.
+        If more than one item is the same level of close match to a misspelled entity return the suggestion from the
+        dictionary that comes first.
       operationId: Story
       parameters: []
       requestBody:

@@ -121,3 +121,4 @@
   // @Comment Instead of having all the functionality in a single file we can write the code in multiple files
   // @Comment Functions can be declared const so that a function cannot be called without being defined
   // @Comment Multiple async functions can be reduced by writing anonymous functions
+  // @Comment TypeScript should be preferred over Javascript. TypeScript is a superset of typed JavaScript (optional) that can help build and manage large-scale JavaScript projects
